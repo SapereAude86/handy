@@ -1,0 +1,5 @@
+After install veracrypt:
+
+veracrypt -t --create test.vc test --hash sha512 --encryption AES --filesystem ext4 --volume-type normal -k "" --pim 0 --size 10M
+veracrypt test.vc (mounts)
+veracrypt -d test.vc (unmount)
