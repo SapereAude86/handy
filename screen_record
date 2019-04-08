@@ -1,2 +1,5 @@
 screen record:
 ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -c:v ffvhuff screen.mkv
+
+include audio:
+ffmpeg -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -c:v ffvhuff -f alsa -i hw:0 screen.mkv
